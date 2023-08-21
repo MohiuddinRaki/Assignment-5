@@ -13,7 +13,7 @@ function  addCalcaulationTotalPrice(target){
 document.getElementById('coupon-field').addEventListener('keyup', function(event){
     const text = event.target.value;
     const applyButton = document.getElementById('apply-button');
-    if(text === 'SELL200'){
+    if(text == 'SELL200' && total >= '200'){
         applyButton.removeAttribute('disabled');
     }
     else{
